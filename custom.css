@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins';
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: black;
+}
+
+.btn-black {
+    background-color: black;
+    color: #fff;
+}
+
+.btn-grey {
+    background-color: #808080;
+    color: white;
+}
+
+.section-top {
+    padding: 6rem 0 6rem 0;
+}
+
+.embed-video {
+    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.text-blue {
+    color: #0088aa;
+}
+
+.bg-grey {
+    background: #e6e6e6;
+}
+
+
+.concept-warehouse {
+    padding: 3rem 0;
+}
+
+.bg-black-light {
+    background-color: #333;
+}
+
+.how-man .image {
+    position: relative;
+    /* height: 430px; */
+    overflow: hidden;
+}
+
+.how-man h2 {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+
+}
+
+.future p,
+.top-solution p,
+.contact p,
+.testimoni p {
+    margin-bottom: 0 !important;
+}
+
+.where-use {}
+
+.bg-grey-dark {
+    background-color: #808080;
+}
+
+.text-small {
+    font-size: 10pt;
+}
+
+.top-solution ul {
+    padding-left: 0rem;
+}
+
+.top-solution ul li {
+    list-style: none;
+    list-style-type: none;
+}

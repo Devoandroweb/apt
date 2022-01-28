@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="accordion.css">
+</head>
+
+<body>
+    <section class="card">
+        <article>
+            <h1 data-accordion-element-trigger>Lorem ipsum</h1>
+            <div data-accordion-element-content class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada
+                    fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque
+                    enim, dignissim at molessllis. Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa
+                    condimentum. Maecenas ac nibh mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+            </div>
+        </article>
+        <article>
+            <h1 data-accordion-element-trigger>Lorem ipsum dolor sit amet, consect</h1>
+            <div data-accordion-element-content class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada
+                    fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque
+                    enim, dignissim at molestie quis, lobortis eu elit. </p>
+            </div>
+        </article>
+        <article>
+            <h1 data-accordion-element-trigger>Lorem ipsum</h1>
+            <div data-accordion-element-content class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada
+                    fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque
+                    enim, dignissim at molestie quis, lobortis eu elit. Sed ornare ultrices tortor sed mollis.
+                    Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa condimentum. Maecenas ac nibh
+                    mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+            </div>
+        </article>
+        <article>
+            <h1 data-accordion-element-trigger>Lorem ipsum</h1>
+            <div data-accordion-element-content class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada
+                    fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque
+                    enim, dignissim at molestie quis, lobortis eu elit. Sed ornare ultrices tortor sed mollis.
+                    Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa condimentum. Maecenas ac nibh
+                    mi. Donec suscipit dolor vitae faucibus venenatis.<br />Praesent non tellus massa. Phasellus at
+                    neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis, lobortis eu elit.
+                    Sed ornare ultrices tortor sed mollis. Pellentesque blandit quam imperdiet lorem lobortis, at
+                    pharetra massa condimentum. Maecenas ac nibh mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+            </div>
+        </article>
+    </section>
+    <script src="accordion.js"></script>
+    <script>
+        /**
+>>>>>>>
+
+Wanna include in your project?
+
+More documentation on github:
+
+https://github.com/cant89/gianni-accordion-js
+
+>>>>>>>
+**/
+
+        var myAccordion = new gianniAccordion({
+            elements: ".card article",
+            trigger: "[data-accordion-element-trigger]",
+            content: "[data-accordion-element-content]",
+        });
+
+        myAccordion.on("elementSelected", (data) => {
+            console.log("elementOpened", data);
+        });
+    </script>
+</body>
+
+</html>
